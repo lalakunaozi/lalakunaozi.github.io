@@ -71,7 +71,7 @@ function getAllSongs() {
   const list = [];
   return new Promise((resolve) => {
     function loop(pageNo = 1) {
-      miguMusic('singer/songs', { id: 369, pageNo })
+      miguMusic('singer/songs', { id: 266, pageNo })
         .then((data) => {
           list.push(...(data.list || []));
           if (data.totalPage < 20) {
